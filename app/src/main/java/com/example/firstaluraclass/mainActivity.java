@@ -20,22 +20,6 @@ public class mainActivity extends Activity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //Toast.makeText(this, "Carregando...", Toast.LENGTH_LONG).show();
-        //TextView aluno = new TextView(this);
-        //aluno.setText("APP 3.1");
-        setContentView(R.layout.activity_main);
-
-        List<String> alunos = new ArrayList<>(Arrays.asList("João Maria", "Ana Luiza", "Marcelo Luis", "Juca", "Thomas"));
-        //TextView AlunosTexto = findViewById(R.id.nomeAlunos);
-        //AlunosTexto.setText(alunos.get(1));
-
-        ListView ListaAlunos = findViewById(R.id.listAlunos);
-
-        ListaAlunos.setAdapter(new ArrayAdapter<String>(
-                this,
-                android.R.layout.simple_list_item_1,
-                alunos));
-
 
 
     }
