@@ -23,7 +23,7 @@ public class mainActivity extends Activity {
 
         alunos.add("Joao");
         alunos.add("Matheus");
-        alunos.add("Pabulo");
+        alunos.add("Pabulo Antonio");
 
         ListView ListaAlunos = findViewById(R.id.listAlunos);
 
