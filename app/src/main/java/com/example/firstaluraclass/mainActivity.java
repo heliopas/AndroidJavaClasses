@@ -7,16 +7,17 @@ import android.widget.ListView;
 
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class mainActivity extends Activity {
+public class mainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        setTitle("APPCompatActivity");
         setContentView(R.layout.activity_main);
 
         List<String> alunos = new ArrayList<>();
