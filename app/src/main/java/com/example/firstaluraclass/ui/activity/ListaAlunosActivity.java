@@ -1,6 +1,5 @@
-package com.example.firstaluraclass;
+package com.example.firstaluraclass.ui.activity;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -9,10 +8,12 @@ import android.widget.ListView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.firstaluraclass.R;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class mainActivity extends AppCompatActivity {
+public class ListaAlunosActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
