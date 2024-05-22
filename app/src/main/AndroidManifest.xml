@@ -13,14 +13,7 @@
         android:theme="@style/Theme.FirstAluraClass"
         tools:targetApi="31">
         <activity
-            android:name=".ui.activity.CadastroAlunoActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:name=".ui.activity.CadastroAlunoActivity" />
         <activity
             android:name=".ui.activity.ListaAlunosActivity"
             android:exported="true">

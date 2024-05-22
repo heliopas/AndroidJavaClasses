@@ -13,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.firstaluraclass.R;
 import com.example.firstaluraclass.ui.activity.AlunoDAO.alunoDAO;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 
 public class ListaAlunosActivity extends AppCompatActivity {
@@ -23,13 +24,7 @@ public class ListaAlunosActivity extends AppCompatActivity {
         setTitle("APPCompatActivity");
         setContentView(R.layout.activity_main);
 
-        alunoDAO dao = new alunoDAO();
-
-        ListView ListaAlunos = findViewById(R.id.listAlunos);
-
-        ListaAlunos.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, dao.getAlunos()));
-
-        Button addIcon = findViewById(R.id.buttomAdd);
+         FloatingActionButton addIcon = findViewById(R.id.buttomAdd);
 
         addIcon.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,6 +32,16 @@ public class ListaAlunosActivity extends AppCompatActivity {
                 startActivity(new Intent(ListaAlunosActivity.this, CadastroAlunoActivity.class));
             }
         });
+
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        alunoDAO dao = new alunoDAO();
+
+        ListView ListaAlunos = findViewById(R.id.listAlunos);
+        ListaAlunos.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, dao.getAlunos()));
 
     }
 }

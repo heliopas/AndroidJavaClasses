@@ -50,7 +50,8 @@ public class CadastroAlunoActivity extends AppCompatActivity {
                 aluno alunoNovo = new aluno(nomeStr, cpfStr, emailStr, dataNasciStr);
                 DAO.salva(alunoNovo);
 
-                startActivity(new Intent(CadastroAlunoActivity.this, ListaAlunosActivity.class));
+//                startActivity(new Intent(CadastroAlunoActivity.this, ListaAlunosActivity.class));
+                finish();
 
             }
         });
@@ -58,4 +59,5 @@ public class CadastroAlunoActivity extends AppCompatActivity {
 
 
     }
+
 }
