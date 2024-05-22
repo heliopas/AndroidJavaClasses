@@ -60,4 +60,24 @@ public class CadastroAlunoActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        Button botaoDel = findViewById(R.id.activity_button_deletar);
+
+        final EditText cpf = findViewById(R.id.activity_cadastro_aluno_cpf);
+        String cpfStr = cpf.getText().toString();
+
+        botaoDel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                alunoDAO DAP = new alunoDAO();
+
+                Toast.makeText(CadastroAlunoActivity.this, DAP.getAlunos().toString(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(CadastroAlunoActivity.this, "teste", Toast.LENGTH_LONG);
+            }
+        });
+
+    }
 }

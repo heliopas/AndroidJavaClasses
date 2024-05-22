@@ -17,4 +17,6 @@ public class alunoDAO {
         return new ArrayList<>(alunos);
     }
 
+    public void deleta(aluno AlunoNovo){ alunos.remove(AlunoNovo); }
+
 }
